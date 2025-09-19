@@ -6,7 +6,7 @@ import pymysql
 conn = pymysql.connect(
     host="localhost",
     user="root",
-    password="1234",
+    password="Your Password",
     database="30_day_challenge",
     autocommit=True
 )
@@ -33,3 +33,4 @@ elif mode == "List Expenses":
         st.table(rows)
     else:
         st.info("No expenses found.")
+
