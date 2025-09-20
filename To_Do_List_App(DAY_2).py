@@ -6,7 +6,7 @@ import pymysql
 conn = pymysql.connect(
     host="localhost",
     user="root",
-    password="1234",
+    password="YOUR PASSWORD",
     database="30_day_challenge",
     autocommit=True
 )
@@ -50,3 +50,4 @@ clear = st.button("Clear")
 if clear:
     cursor.execute("TRUNCATE TABLE to_do_list;")
     st.session_state["refresh"] += 1
+
